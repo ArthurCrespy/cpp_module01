@@ -26,9 +26,9 @@ int main(void)
     std::cout << "address ptr: " << ptr << std::endl;
     std::cout << "address ref: " << &ref << std::endl;
 
-    std::cout << "str: " << str << std::endl;
-    std::cout << "ptr: " << *ptr << std::endl;
-    std::cout << "ref: " << ref << std::endl;
+    std::cout << "value   str: " << str << std::endl;
+    std::cout << "value   ptr: " << *ptr << std::endl;
+    std::cout << "value   ref: " << ref << std::endl;
 
     return (0);
 }
