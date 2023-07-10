@@ -14,21 +14,21 @@
 
 int main(void)
 {
-    std::string str;
-    std::string *ptr;
+    std::string stringSTR;
+    std::string *stringPTR;
 
-    str = "HI THIS IS BRAIN";
-    ptr = &str;
+    stringSTR = "HI THIS IS BRAIN";
+    stringPTR = &stringSTR;
 
-    std::string &ref = str;
+    std::string &stringREF = stringSTR;
 
-    std::cout << "address str: " << &str << std::endl;
-    std::cout << "address ptr: " << ptr << std::endl;
-    std::cout << "address ref: " << &ref << std::endl;
+    std::cout << "address str: " << &stringSTR << std::endl;
+    std::cout << "address ptr: " << stringPTR << std::endl;
+    std::cout << "address ref: " << &stringREF << std::endl;
 
-    std::cout << "value   str: " << str << std::endl;
-    std::cout << "value   ptr: " << *ptr << std::endl;
-    std::cout << "value   ref: " << ref << std::endl;
+    std::cout << "value   str: " << stringSTR << std::endl;
+    std::cout << "value   ptr: " << *stringPTR << std::endl;
+    std::cout << "value   ref: " << stringREF << std::endl;
 
     return (0);
 }
