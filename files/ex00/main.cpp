@@ -14,15 +14,15 @@
 
 int	main(void)
 {
-	std::cout << "<computer> Hello Michel!" << std::endl;
-	Zombie	michel("Michel");
-	michel.announce();
-
-	std::cout << "<computer> Hello Bob!" << std::endl;
+	std::cout << "Computer: Hello Bob!" << std::endl;
 	Zombie	*bob = newZombie("Bob");
 	bob->announce();
 	delete bob;
 
-	std::cout << "<computer> Hello John!" << std::endl;
+	std::cout << "Computer: Hello John!" << std::endl;
 	randomChump("John");
+
+	std::cout << "Computer: Hello Michel!" << std::endl;
+	Zombie	michel("Michel");
+	michel.announce();
 }

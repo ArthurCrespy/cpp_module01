@@ -19,10 +19,10 @@ Zombie::Zombie(std::string name)
 
 Zombie::~Zombie()
 {
-	std::cout << "<" << this->_name << "> was healed and became human again!" << std::endl;
+	std::cout << this->_name << ": was healed and became human again!" << std::endl;
 }
 
 void	Zombie::announce(void)
 {
-	std::cout << "<" << this->_name << "> BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
