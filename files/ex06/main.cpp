@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		std::cout << "Usage: ./ex06 [DEBUG/INFO/WARNING/ERROR]" << std::endl;
+		std::cout << "Usage: ./harlFilter [DEBUG/INFO/WARNING/ERROR]" << std::endl;
 		return (1);
 	}
 
