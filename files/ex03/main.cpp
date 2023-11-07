@@ -33,5 +33,9 @@ int main(void)
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	{
+		HumanA michel;
+		michel.attack();
+	}
     return (0);
 }
