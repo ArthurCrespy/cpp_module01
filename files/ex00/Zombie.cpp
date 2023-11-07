@@ -22,7 +22,7 @@ Zombie::~Zombie()
 	std::cout << this->_name << ": was healed and became human again!" << std::endl;
 }
 
-void	Zombie::announce(void)
+void Zombie::announce(void)
 {
 	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

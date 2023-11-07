@@ -17,7 +17,7 @@ int	main(void)
 	std::cout << "Computer: Hello Bob!" << std::endl;
 	Zombie	*bob = newZombie("Bob");
 	bob->announce();
-	delete bob;
+	delete (bob);
 
 	std::cout << "Computer: Hello John!" << std::endl;
 	randomChump("John");

@@ -24,6 +24,6 @@ int main(void)
 		zombie[i].announce();
 		i++;
 	}
-	delete [] zombie;
+	delete [] (zombie);
 	return (0);
 }

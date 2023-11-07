@@ -58,7 +58,8 @@ void Harl::filter(std::string level)
 		i++;
 	}
 
-	switch (i) {
+	switch (i)
+	{
 		case 0:
 			complain("DEBUG");
 			complain("INFO");
@@ -85,9 +86,9 @@ void Harl::filter(std::string level)
 
 void Harl::complain(std::string level)
 {
-	int i;
-	void (Harl::*ptr_complain[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	int         i;
+	void		(Harl::*ptr_complain[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 	i = 0;
 	while (i < 4)
