@@ -35,12 +35,17 @@ void ft_replace(const std::string& filename, const std::string& s1, const std::s
     while (std::getline(input, line))
 	{
         pos = 0;
-        while ((pos = line.find(s1, pos)) != std::string::npos)
+		if (s1.empty())
+			output << line << std::endl;
+		else
 		{
-            line = line.substr(0, pos) + s2 + line.substr(pos + s1.length());
-            pos += s2.length();
-        }
-        output << line << std::endl;
+	        while ((pos = line.find(s1, pos)) != std::string::npos)
+			{
+	            line = line.substr(0, pos) + s2 + line.substr(pos + s1.length());
+	            pos += s2.length();
+	        }
+            output << line << std::endl;
+		}
     }
     std::cout << "Replacement completed successfully. Output file: " << filename << ".replace" << std::endl;
 }
